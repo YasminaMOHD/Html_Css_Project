@@ -1,0 +1,188 @@
+@font-face {
+    src: url("../font/HelveticaNeue.ttf");
+    font-family: HelveticaNeue;
+}
+body{
+    font-family: HelveticaNeue,'Noto Naskh Arabic UI',Arial,sans-serif;
+}
+header{
+    height: 48px;
+    line-height: 38px;
+    min-width: auto;
+    padding: 5px 15px;
+    margin-bottom:7%;
+}
+header .header_content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+header .header_content .header_circle{
+    border-radius: 50%;
+    border-color: transparent;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    text-align: center;
+    align-items: center;
+    line-height: 32px;
+}
+header .header_content .green_circle{
+    background: green;
+    color: #fff;
+    margin-right: 15px;
+}
+header .header_content .header_circle.gray_hover_circle:hover{
+    background-color: rgba(95,99,105,.5);
+}
+.header_content .header_tage a{
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 15px;
+    font-weight: normal;
+}
+.header_content .header_tage a:hover{
+    text-decoration-line: underline;
+}
+.icon{
+    text-align: center;
+    margin: 36px auto 18px;
+    width: 250px;
+    line-height: 0;
+}
+.icon img{
+    width: 100%;
+    height: 100px;
+    margin: 8px 0;
+    border: none;
+}
+.search_box{
+    margin: 8px;
+}
+.search_box form{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 736px;
+    overflow: hidden;
+    width: auto;
+}
+.search_box form .search_box_content{
+    border-radius: 20px;
+    border: 1px solid #dadce0;
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding: 0 15px;
+    line-height: 40px;
+}
+.search_box form .search_box_content .search_input{
+    width: 80%;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0 19px 0 0;
+    font-size: 18px;
+    color: rgba(0,0,0,.87);
+    outline: none;
+    display: flex;
+    flex: 1;
+    -webkit-tap-highlight-color: transparent;
+    text-align: right;
+    z-index: 1;
+}
+.search_box form .search_box_content a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+.search_box form .search_box_content a  i{
+    font-size: 16px;
+}
+.search_box form .search_box_content  .right_search_side a i{
+    color: #dadce0 !important;
+}
+.other_btn{
+    margin-top: 40px;
+    text-align: center;
+}
+.other_btn .google_btn{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+.other_btn .google_btn:hover{
+    border:3px solid rgb(239,239,239);
+}
+.other_btn .google_btn:focus{
+    outline-color: #338FFF !important;
+}
+.tags{
+    text-align: center;
+}
+.tags p{
+    display: inline-block;
+    line-height: 28px;
+    font-size: 14px;
+}
+.tags p a{
+    color: blue;
+    text-decoration: none;
+}
+.tags p a:hover{
+text-decoration-line: underline;
+}
+footer{
+    background: #f2f2f2;
+    text-align: right;
+    bottom: 0 !important;
+    margin-top: 7.5%;
+}
+footer .country{
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    padding: 15px 30px;
+    color: rgba(0,0,0,.54);
+}
+footer .footer_content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 15px;
+}
+footer .footer_content a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgba(0,0,0,.54);
+}
+footer .footer_content a:hover{
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width: 768px) {
+    footer .footer_content{
+        flex-direction: column!important;
+    }
+    footer .footer_content .right_tags_footer{
+        margin-bottom: 15px;
+    }
+    footer .footer_content .right_tags_footer a,footer .footer_content .left_tags_footer a{
+        font-size: 13px;
+    }
+}
